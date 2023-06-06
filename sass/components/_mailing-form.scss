@@ -1,0 +1,74 @@
+.mailing-form {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        margin: 60px 150px 0px;
+    }
+}
+
+.mailing-form__title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1200px) {
+        text-align: center;
+    }
+}
+
+.mailing-form__field-wrapper {
+    position: relative;
+    display: flex;
+
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.mailing-form__field {
+    border: solid 1px var(--mailing-field-border);
+    background-color: transparent;
+    border-radius: 4px;
+    padding: 15px 16px;
+    width: 358px;
+    outline: transparent;
+    margin-right: 12px;
+    color: var(--main-color);
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        max-width: 450px;
+        margin-right: 0px;
+    }
+}
+
+.mailing-field::placeholder {
+    color: var(--mailing-plaseholder-color);
+}
+
+.mailing-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0px;
+    width: 200px;
+    background-color: var(--first-logo-color);
+    border-color: transparent;
+    border-radius: 4px;
+    padding: 10px 28px;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.mailing-button__icon {
+    fill: var(--main-color);
+}

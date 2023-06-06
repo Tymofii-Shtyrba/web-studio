@@ -1,0 +1,49 @@
+.invite-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+        margin-right: 93px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--main-color);
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        border-radius: 50%;
+        justify-content: center;
+        background: var(--basement-social-link-color);
+    }
+
+    &__social-icon {
+        fill: var(--main-color);
+    }
+}
+
+.invite-container__link:hover,
+.invite-container__link:focus {
+    background-color: var(--first-logo-color);
+    transition: background-color 250ms var(--transition-function);
+}

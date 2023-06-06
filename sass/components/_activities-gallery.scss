@@ -1,0 +1,46 @@
+.activities {
+
+    @media screen and (max-width: 1200px) {
+        display: none;
+    }
+    padding-bottom: 94px;
+
+    &__container {
+        margin: 0px auto;
+        width: 1200px;
+        padding: 0px 15px;
+    }
+}
+
+.activities__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+}
+
+.activities__list {
+    display: flex;
+    gap: 30px;
+}
+
+.activity {
+    position: relative;
+
+    &__descr {
+        position: absolute;
+        bottom: 0px;
+        padding: 27px 0px;
+        width: 100%;
+        background-color: var(--activity-descr-color);
+        color: var(--main-color);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+}

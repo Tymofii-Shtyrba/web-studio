@@ -1,0 +1,21 @@
+.footer {
+    background: var(--second-color);
+    padding: 60px 0px;
+
+    &__container {
+        margin: 0px auto;
+        max-width: 1200px;
+        padding: 0px 15px;
+        display: block;
+        align-items: baseline;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1200px) {
+            justify-content: center;
+        }
+    }
+}

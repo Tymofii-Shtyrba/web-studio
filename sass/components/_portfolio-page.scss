@@ -1,0 +1,13 @@
+.portfolio {
+    padding: 94px 0px;
+
+    &__container {
+            margin: 0px auto;
+            width: 1200px;
+            padding: 0px 15px;
+        }
+}
+
+.portfolio__title--visually-hidden {
+    @extend %visually-hidden;
+}
